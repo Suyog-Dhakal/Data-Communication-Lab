@@ -4,6 +4,8 @@ amp = 19;
 ts= 0.001;
 t = 0:ts:3-ts;
 
+
+
 sig = amp*cos(2*pi*f*t);
 
 %cosine wave
@@ -11,6 +13,7 @@ subplot(3,1,1);
 plot(t,sig);
 xlabel('Time');
 ylabel('Amplitude');
+
 
 %using fft
 
@@ -21,6 +24,8 @@ subplot(3,1,2);
 plot(f,abs(x));
 xlabel('Frequency');
 ylabel('Magnitude');
+
+
 
 %inverse fourier transform using  IFFT
 
