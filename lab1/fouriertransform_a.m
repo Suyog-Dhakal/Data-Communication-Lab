@@ -22,3 +22,12 @@ plot(f,abs(x));
 xlabel('Frequency');
 ylabel('Magnitude');
 
+%inverse fourier transform using  IFFT
+
+z= ifft(x);
+suplot(3,1,3);
+plot(t,z);
+title("signal from ifft()");
+xlabel("t");
+ylabel("z(t)");
+
