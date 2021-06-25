@@ -1,0 +1,1 @@
+f= 1;A = 5;dcBias = -3;t = linspace(-3,3,100) %(base,limit,n)y = A*square(2*pi*f*t)+dcBias;plot(t,y);title("square wave");xlabel("t");ylabel("x(t)");axis([-5 5 -10 10]);set(gca, 'XAxisLocation', 'origin')set(gca, 'YAxisLocation', 'origin')grid on
